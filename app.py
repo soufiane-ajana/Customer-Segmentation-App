@@ -10,23 +10,51 @@ st.set_page_config(page_title="Customer Insights Pro", page_icon="🌌", layout=
 # --- INJECTION DE CSS POUR LE DESIGN (Animations et Couleurs) ---
 st.markdown("""
     <style>
-    /* Design des boutons */
+    /* 1. FOND GLOBAL SOMBRE ET ÉLÉGANT */
+    .stApp {
+        background-color: #0E1117;
+        background-image: radial-gradient(circle at 50% 0%, #2b2b2b 0%, #0E1117 70%);
+        color: #FAFAFA;
+    }
+
+    /* 2. ANIMATION DES CARTES DE RÉSULTATS (KPIs) */
+    div[data-testid="stMetric"] {
+        background-color: #1E1E1E;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        transition: all 0.3s ease-in-out; /* C'est ça qui crée la fluidité */
+        border: 1px solid #333;
+    }
+    /* L'effet 'Hover' (survol de la souris) sur les KPIs */
+    div[data-testid="stMetric"]:hover {
+        transform: translateY(-8px) scale(1.02); /* Soulèvement et léger zoom */
+        box-shadow: 0 12px 25px rgba(255,255,255,0.1); /* Ombre blanche diffuse */
+        border-color: #4b6cb7; /* Bordure qui s'allume en bleu */
+    }
+
+    /* 3. ANIMATION DU BOUTON PRINCIPAL */
     .stButton>button {
         width: 100%;
         border-radius: 30px;
         background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
         color: white;
         font-weight: bold;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.4s ease;
         border: none;
     }
     .stButton>button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+        box-shadow: 0px 10px 25px rgba(75, 108, 183, 0.6); /* Halo lumineux bleu */
+        letter-spacing: 1px; /* Le texte s'écarte légèrement */
     }
-    /* Style des métriques */
-    div[data-testid="stMetricValue"] {
-        font-size: 2.5rem;
+
+    /* 4. ANIMATION DES ONGLETS (TABS) */
+    .stTabs [data-baseweb="tab"] {
+        transition: all 0.3s ease;
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        transform: translateY(-3px);
         color: #4b6cb7;
     }
     </style>
