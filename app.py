@@ -179,3 +179,5 @@ with col2:
         st.markdown("""
         * **Baisse du Coût d'Acquisition (CAC) :** En arrêtant de cibler les 'Économes' avec des publicités premium très chères.
         * **Hausse
+        * **Efficacité Opérationnelle :** Les commerciaux ne perdent plus de temps à qualifier manuellement les leads, la donnée parle d'elle-même.
+        """)
