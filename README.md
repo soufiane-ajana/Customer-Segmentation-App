@@ -4,7 +4,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B.svg)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-F7931E.svg)](https://scikit-learn.org/)
 
-**Live Demo:** [👉 Click here to view the live application]([METS_TON_LIEN_STREAMLIT_ICI](https://customer-segmentation-app-9hzmzuml8kxq2gavgwoawk.streamlit.app/#profil-identifie-classe-moyenne-coeur-de-cible))
+**Live Demo:** [👉 Click here to view the live application : https://customer-segmentation-app-9hzmzuml8kxq2gavgwoawk.streamlit.app/#profil-identifie-classe-moyenne-coeur-de-cible]
 
 ## 📌 Project Overview
 This project is an end-to-end **Data Science & Machine Learning application** designed to help marketing and management teams transition from intuition-based decisions to a data-driven strategy. 
