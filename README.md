@@ -37,8 +37,11 @@ If you wish to run this project on your own machine:
    ```bash
    git clone [https://github.com/YOUR_USERNAME/Customer-Segmentation-App.git](https://github.com/soufiane-ajana/Customer-Segmentation-App.git)
 2. Navigate to the project directory:
+   ```bash
    cd Customer-Segmentation-App
 3. Install the required dependencies:
+   ```bash
    pip install -r requirements.txt
 4. Run the Streamlit server:
+   ```bash
    streamlit run app.py
